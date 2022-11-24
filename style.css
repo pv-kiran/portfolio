@@ -6,6 +6,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -24,6 +25,10 @@ a {
 
 .nav-container {
   padding: 2.5rem 3rem;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  width: 100%;
 }
 
 .nav-list {
@@ -36,6 +41,8 @@ a {
     width: 5rem;
     height: 5rem;
     margin-right: .5rem;
+    display: block;
+    border-radius: 1rem;
 }
 
 .logo-container {
@@ -44,10 +51,12 @@ a {
     align-items: center;
     flex-basis: 50rem;
 }
+
 .nav-brand {
     font-size: 2rem;
     letter-spacing: 1px;
     font-weight: 400;
+    color: black;
 }
 .nav-link {
     font-size: 1.5rem;
@@ -56,9 +65,8 @@ a {
 }
 
 
-
 .section-hero {
-    height: 83vh;
+    margin-bottom: 2rem;
 }
 
 .hero-img img {
@@ -75,6 +83,8 @@ a {
     height: 100%;
     width: 80%;
     margin: auto;
+
+    padding: 4rem 0;
 }
 
 .hero-details {
@@ -93,3 +103,199 @@ a {
     padding-left: .5rem;
     font-weight: 200;
 }
+
+
+/* Section ABOUT */
+
+.section-about {
+    padding: 15rem 0;
+}
+
+.about {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.about-container {
+    width: 60%;
+    text-align: justify;
+} 
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: center;
+    width: 35%;
+    margin-left: 3rem;
+}
+
+.secondery-heading {
+    font-size: 3.7rem;
+    font-weight: 600;
+    padding-left: 7rem;
+    margin-bottom: 2rem;
+}
+
+.about-text {
+   font-size: 2rem;
+   font-weight: 200;
+   padding: 1rem .5rem;
+}
+
+.btn {
+    padding: .5rem 1rem;
+    font-size: 1.6rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    border: 1px rgb(116, 113, 113) solid;
+    background-color: transparent;
+    margin: .5rem 1rem;
+    border-radius: 1rem;
+    background-color: transparent;
+}
+
+
+
+.experience-list-item h3 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.experience-sublist .company {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.company a {
+    font-size: 2.5rem;
+    color: rgb(32, 32, 32);
+    font-weight: 400;
+}
+
+.projects h4 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.project-list li {
+    font-size: 1.6rem;
+    padding-left: 5rem;
+}
+
+
+.section-experience {
+    padding: 12rem 10rem;
+}
+
+.experience-list-item {
+    margin-bottom: 3rem;
+}
+.project-description {
+    display: block;
+    padding: 1rem 0;
+    padding-left: 5rem;
+    font-size:2rem;
+    font-weight: 100;
+    width: 100%;
+    text-align: justify;
+}
+
+.section-education {
+    padding: 16rem 15rem;
+    padding-bottom: 13rem;
+}
+
+.education-heading {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.institution {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.year {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.education-container {
+    margin-bottom: 1rem;
+}
+
+
+
+
+.section-contact-us {
+    padding: 8rem 0;
+    border-radius: .7rem;
+}
+
+.contact-form-container {
+    border-left: 5px rgb(179, 177, 177) solid;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    padding: 3rem 4rem;
+    /* justify-content: center; */
+}
+.contact-text {
+    width: 40%;
+    margin-right: 2.5rem;
+}
+.contact-text h2 {
+    font-size: 6rem;
+    font-weight: 400;
+}
+.input-container {
+    display: flex;
+}
+
+.message {
+    height: 18rem;
+    width: 51rem;
+    padding: .8rem;
+    border: none;
+    border-radius: .5rem;
+    outline: none;
+    font-size: 1.7rem;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
+.text-container label , .message-container label {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: gray;
+    padding: .5rem 0;
+}
+
+.input {
+    padding: 1.5rem 1rem;
+    width: 25rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: .7rem;
+    font-size: 1.7rem;
+    outline: none;
+}
+.input:focus {
+    border-bottom: .5px green solid;
+}
+
+.input-container {
+    margin-bottom: 2rem;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+}
+
