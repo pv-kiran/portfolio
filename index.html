@@ -5,34 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
     <title>Kiran PV</title>
 </head>
 <body>
     
     <nav class="nav-container">
         <ul class="nav-list">
-        <li class="nav-item logo-container">
-            <img class="logo-img" src="https://t3.ftcdn.net/jpg/03/02/36/96/360_F_302369648_eZo8IhX5xNOA0HiFbWx4Q5in6C6irFbM.jpg" alt="logo">
-            <a href="#" class="nav-brand">Kiran PV</a href="#">
-        </li>
-        <li class="nav-item">
-            <a href="#about" class="nav-link">About</a>
-        </li>
-        <li class="nav-item">
-            <a href="#experience" class="nav-link">Experience</a>
-        </li>
-        <li class="nav-item">
-            <a href="#education" class="nav-link">Education</a>
-        </li>
-        
-        <li class="nav-item">
-            <a href="#" class="nav-link">Projects</a>
-        </li>
-        
-        <li class="nav-item">
-            <a href="#contact" class="nav-link">Contact</a>
-        </li>
-        
+            <li class="nav-item logo-container">
+                <img class="logo-img" src="https://t3.ftcdn.net/jpg/03/02/36/96/360_F_302369648_eZo8IhX5xNOA0HiFbWx4Q5in6C6irFbM.jpg" alt="logo">
+                <a href="#" class="nav-brand">Kiran PV</a href="#">
+            </li>
+            <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#experience" class="nav-link">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a href="#education" class="nav-link">Education</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="#" class="nav-link">Projects</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+            </li>
         </ul>
     </nav>
 
@@ -90,7 +90,7 @@
                    <ul class="project-list"> 
                      <li>Wealth Management Americas Platform <br>
                         <span class="project-description">
-                             Unqork configuration of a front-to-back office
+                            Unqork configuration of a front-to-back office
                             solution that optimizes Financial Advisor productivity, creates a
                             richer client experience, and digitizes enterprise-wide
                             operations Understanding the overallarchitecture and identifying the navigational points. Developing UI screens according to the business requirements, maintaining the configuration standards and reusability. Implementation of business logic using various data and event processors.
@@ -100,9 +100,9 @@
                      <li>NYC Tax Prep Services Aplication <br>
                         <span class="project-description">
                             Unqork configuration of a front-to-back office
-                           solution that optimizes Financial Advisor productivity, creates a
-                           richer client experience, and digitizes enterprise-wide
-                           operations Understanding the overallarchitecture and identifying the navigational points. Developing UI screens according to the business requirements, maintaining the configuration standards and reusability. Implementation of business logic using various data and event processors.
+                            solution that optimizes Financial Advisor productivity, creates a
+                            richer client experience, and digitizes enterprise-wide
+                            operations Understanding the overallarchitecture and identifying the navigational points. Developing UI screens according to the business requirements, maintaining the configuration standards and reusability. Implementation of business logic using various data and event processors.
                        </span>
                      </li>
                      
@@ -158,15 +158,15 @@
 
    <section class="section-contact-us" id="contact">
     <div class="contact-form-container">
-        <div class="contact-text">
+         <div class="contact-text">
             <h2>Want to get in touch?</h2>
          </div>
          <div class="contact-form">
-            <form>
+            <form id="form" >
                <div class="input-container">
                    <div class="text-container">
                        <label for="fname">Name</label>
-                       <input type="text" class="input" name="fname" id="fname" placeholder="Enter your name" autocomplete="off">
+                       <input type="text" class="input" name="name" id="name" placeholder="Enter your name" autocomplete="off">
                    </div>
                    <div class="text-container">
                        <label for="email">Email</label>
@@ -177,10 +177,43 @@
                  <label for="message">Message</label>
                  <textarea name="message" class="message" placeholder="Enter your message"></textarea>
                </div>
+               <div class="error"></div>
+               <input type="submit" class="submit-btn" value="Submit">
             </form>
          </div>
     </div>
+    
    </section>
-
+  <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+<!-- https://script.google.com/macros/s/AKfycbzZ0aJEeVE3DnVWbFsF_MLbXVNMtnJVz8H70t7icAD8imtNMsP_dXGQh7IWNvg7fSF2/exec -->
+
+<!-- https://script.google.com/macros/s/AKfycbwKU255ra4bFhJsEHfVd8QgBXwkpJRjlpqLSooyGPQ_GG3mVev72IArfieWWY5x_xU/exec -->
+
+<!-- method="POST"  action="https://formsubmit.co/kiranpv903@gmail.com" -->
+
+<!-- <form id="form" action="https://formsubmit.co/kiranpv903@gmail.com" method="POST">
+    <div>
+        <div>
+            <input type="text" name="name" id="name" required>
+        </div>
+    </div>
+    <div>
+        <div>
+            <input type="email" name="email" id="email" required>
+        </div>
+    </div>
+    <div>
+        <textarea class="message" name="message" id="msg" ></textarea>
+    </div> 
+    <input type="submit" class="btn" value="submit">
+</form> -->

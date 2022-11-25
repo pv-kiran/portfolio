@@ -64,6 +64,7 @@ a {
     font-weight: 500;
 }
 
+/* Hero Details */
 
 .section-hero {
     margin-bottom: 2rem;
@@ -83,7 +84,6 @@ a {
     height: 100%;
     width: 80%;
     margin: auto;
-
     padding: 4rem 0;
 }
 
@@ -230,12 +230,12 @@ a {
 
 
 .section-contact-us {
-    padding: 8rem 0;
+    padding: 13rem 0;
     border-radius: .7rem;
 }
 
 .contact-form-container {
-    border-left: 5px rgb(179, 177, 177) solid;
+    /* border-left: 5px rgb(179, 177, 177) solid; */
     width: 85%;
     margin: auto;
     display: flex;
@@ -298,4 +298,114 @@ a {
     display: flex;
     flex-direction: column;
 }
+.submit-btn {
+    display: block;
+    width: 15rem;
+    margin-left: 0;
+    margin-top: 2rem;
+    padding: 1.2rem;
+    background-color: rgb(41, 39, 39);
+    border-radius: .6rem;
+    color: aliceblue;
+    cursor: pointer;
+    border: none;
+}
+.error {
+    width: 51rem;
+    height: 0;
+    margin: 1.5rem 0;
+    background-color: rgb(220, 95, 95);
+    /* transform: scale(0); */
+    /* display: none; */
+    transition: all .2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: .4rem;
+}
+.submit-btn:hover {
+    background-color: rgb(70, 68, 68);
+}
 
+@media (max-width:640px) {
+   .hero {
+     flex-direction: column;
+     width: 100%;
+   }
+   .about {
+     flex-direction: column;
+     width: 100%;
+   }
+   .primary-heading {
+     font-size: 5rem;
+     padding: 1rem 0;
+     text-align: center;
+   }
+   .about-container  {
+     width: 100%;
+   } 
+   .skills-container {
+     width: 100%;
+     padding:2rem 0;
+     margin-left: 0;
+   }
+   .hero-img img {
+      width: 25rem;
+   }
+   .section-experience {
+      padding: 8rem 2rem;
+   }
+   
+   .experience-list-item h3 {
+      font-size: 2rem;
+   }
+   .experience-sublist .company {
+      font-size: 1.5rem;
+   }
+   .project-list li {
+      padding-left: 0;
+   }
+   .project-description {
+    padding-left: 0;
+   }
+   .section-education {
+      padding: 12rem 2rem;
+   }
+   .secondery-heading {
+      font-size: 4rem;
+      padding-left: 1rem;
+   }
+   .education-heading {
+    font-size: 2rem;
+   }
+   .contact-form-container {
+      flex-direction: column;
+      padding:1rem 2rem;
+   }
+   .contact-text {
+      width: 100%;
+   }
+   .contact-text h2  {
+       font-size: 3rem;
+   }
+   .input-container {
+      flex-direction: column;
+   } 
+   .message , .input {
+     width: 30rem;
+   }
+   .section-contact-us {
+      padding: 6rem 0;
+   }
+   .details-text {
+      padding: 0;
+      text-align: center;
+   }
+   .about-text {
+        font-size: 1.8rem;
+        font-weight: 200;
+        padding: 0rem 1.5rem;
+   }
+}
