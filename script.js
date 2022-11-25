@@ -1,6 +1,16 @@
 var form = document.querySelector("#form")
 form.addEventListener('submit' , function(e) {
     e.preventDefault(); 
+    var res = validate();
+    console.log(res);
+    if(res) {
+        sendEmail();
+    }
+    // sendEmail();
+})
+
+
+function validate() {
     var name = document.querySelector('#name').value;
     var email = document.querySelector('#email').value;
     var message = document.querySelector('.message').value;
@@ -31,14 +41,25 @@ form.addEventListener('submit' , function(e) {
         err.style.height = '4rem';
         return false;
     }
-   
-    // const formdt = new FormData(form);
-    // console.log(formdt);
-
+    
     return true;
+}
 
-})
-
+function sendEmail() {
+    const formData = new FormData(form) // got formdata
+    // console.log(formData);
+    // const FirstName = formData.get('fname');
+    // const Email = formData.get('email');
+    const message = formData.get('message');
+    const body = 
+    `Hi Kiran ,
+     ${message}`;
+    // created body string 
+    
+    const uri = `mailto:kiranpv903@gmail.com?body=${encodeURIComponent(body)}`;
+    // created final uri to redirect to
+    window.location.href = uri
+}
 
 // function validate(e) {
 //     e.preventDefault();
