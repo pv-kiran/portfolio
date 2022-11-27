@@ -1,12 +1,15 @@
 var form = document.querySelector("#form")
 form.addEventListener('submit' , function(e) {
     e.preventDefault(); 
+    var emailRes;
     var res = validate();
     console.log(res);
     if(res) {
-        sendEmail();
+      emailRes =  sendEmail();
     }
-    // sendEmail();
+    if(emailRes) {
+      sheetSubmission();
+    }
 })
 
 
@@ -46,6 +49,8 @@ function validate() {
 }
 
 function sendEmail() {
+
+  console.log("mail")
     const formData = new FormData(form) // got formdata
     // console.log(formData);
     // const FirstName = formData.get('fname');
@@ -58,9 +63,26 @@ function sendEmail() {
     
     const uri = `mailto:kiranpv903@gmail.com?body=${encodeURIComponent(body)}`;
     // created final uri to redirect to
-    window.location.href = uri
+    window.location.href = uri;
+    return true;
 }
 
+function sheetSubmission() {
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx1Pv6nxABsCe-_PbBvkUipU99gjSJncnC9p5yPUAfqs_R6CNLkxIdAVzjjJkUJaiCJ5A/exec';
+  const submitButton = document.querySelector(".submit-btn");
+  submitButton.disabled = true
+//    e.preventDefault()
+  let requestBody = new FormData(form)
+  fetch(scriptURL, { method: 'POST', body: requestBody})
+    .then(response => {
+    alert('Success!', response)
+      submitButton.disabled = false;
+    })
+    .catch(error => {
+      alert('Error!', error.message)
+        submitButton.disabled = false;
+    })
+}
 // function validate(e) {
 //     e.preventDefault();
 //     var name = document.querySelector('#name').value;

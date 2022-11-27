@@ -31,42 +31,22 @@ a {
   width: 100%;
 }
 
-.nav-list {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.navbar {
+  opacity: .4;
 }
 
-.logo-img {
-    width: 5rem;
-    height: 5rem;
-    margin-right: .5rem;
-    display: block;
-    border-radius: 1rem;
-}
-
-.logo-container {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-basis: 50rem;
-}
-
-.nav-brand {
+.navbar a {
     font-size: 2rem;
-    letter-spacing: 1px;
-    font-weight: 400;
-    color: black;
 }
-.nav-link {
-    font-size: 1.5rem;
-    color: black;
-    font-weight: 500;
+
+.logo {
+    font-size: 3rem;
 }
 
 /* Hero Details */
 
 .section-hero {
+    padding-top: 8rem;
     margin-bottom: 2rem;
 }
 
@@ -340,7 +320,7 @@ a {
    }
    .primary-heading {
      font-size: 5rem;
-     padding: 1rem 0;
+     padding: 2rem 0 .3rem;
      text-align: center;
    }
    .about-container  {

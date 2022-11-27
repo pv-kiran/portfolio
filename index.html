@@ -4,39 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    
     <title>Kiran PV</title>
 </head>
 <body>
-    
-    <nav class="nav-container">
-        <ul class="nav-list">
-            <li class="nav-item logo-container">
-                <img class="logo-img" src="https://t3.ftcdn.net/jpg/03/02/36/96/360_F_302369648_eZo8IhX5xNOA0HiFbWx4Q5in6C6irFbM.jpg" alt="logo">
-                <a href="#" class="nav-brand">Kiran PV</a href="#">
-            </li>
-            <li class="nav-item">
-                <a href="#about" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-                <a href="#experience" class="nav-link">Experience</a>
-            </li>
-            <li class="nav-item">
-                <a href="#education" class="nav-link">Education</a>
-            </li>
-            
-            <li class="nav-item">
-                <a href="#" class="nav-link">Projects</a>
-            </li>
-            
-            <li class="nav-item">
-                <a href="#contact" class="nav-link">Contact</a>
-            </li>
-        </ul>
-    </nav>
 
-   <section class="section-hero">
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="main-nav">
+        <div class="container">
+          <a href="#" class="navbar-brand"><strong class="logo">PV </strong> Kiran</a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a href="#about" class="nav-link text-light">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#experience" class="nav-link text-light">Experience</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#education" class="nav-link text-light">Education</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#contact" class="nav-link text-light">Contact</a>
+                  </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="section-hero">
         <div class="hero">
                 <div class="hero-img">
                     <img src="./img/pv-kiran.png" alt="">
@@ -50,7 +50,7 @@
                     </p>
                 </div>
         </div>
-   </section>
+      </section>
 
    <section class="section-about" id="about">
       <h1 class="secondery-heading">
@@ -162,15 +162,15 @@
             <h2>Want to get in touch?</h2>
          </div>
          <div class="contact-form">
-            <form id="form" >
+            <form id="form" action="mailto:kiranpv903@gmail.com" method="post" enctype="text/plain">
                <div class="input-container">
                    <div class="text-container">
-                       <label for="fname">Name</label>
-                       <input type="text" class="input" name="fname" id="name" placeholder="Enter your name" autocomplete="off">
+                       <label for="name">Name</label>
+                       <input type="text" class="input" name="name" id="name" placeholder="Enter your name" autocomplete="off" >
                    </div>
                    <div class="text-container">
                        <label for="email">Email</label>
-                       <input type="text" class="input" name="email" id="email" placeholder="Enter your email" autocomplete="off">
+                       <input type="text" class="input" name="email" id="email" placeholder="Enter your email" autocomplete="off" >
                    </div>
                </div>
                <div class="message-container">
@@ -184,7 +184,14 @@
     </div>
     
    </section>
+   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
   <script src="script.js"></script>
+  
 </body>
 </html>
 
@@ -217,3 +224,57 @@
     </div> 
     <input type="submit" class="btn" value="submit">
 </form> -->
+
+
+
+  <!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="main-nav">
+        <div class="container">
+          <a href="index.html" class="navbar-brand"><strong>LoopLAB</strong></a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+             <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a href="#home" class="nav-link text-light">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#explore-head-section" class="nav-link text-light">Explore</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#create-head-section" class="nav-link text-light">Create</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#share-head-section" class="nav-link text-light">Share</a>
+                  </li>
+              </ul>
+          </div>
+        </div>
+    </nav> -->
+
+
+    <!-- <nav class="nav-container">
+        <ul class="nav-list">
+            <li class="nav-item logo-container">
+                <img class="logo-img" src="https://t3.ftcdn.net/jpg/03/02/36/96/360_F_302369648_eZo8IhX5xNOA0HiFbWx4Q5in6C6irFbM.jpg" alt="logo">
+                <a href="#" class="nav-brand">Kiran PV</a href="#">
+            </li>
+            <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#experience" class="nav-link">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a href="#education" class="nav-link">Education</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="#" class="nav-link">Projects</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+            </li>
+        </ul>
+    </nav> -->
