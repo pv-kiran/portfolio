@@ -19,18 +19,29 @@ function validate() {
     var message = document.querySelector('.message').value;
     var err = document.querySelector('.error');
     var text ;
+    // var nameFormat = (/^[A-Za-z]*\s{1}[A-Za-z]*$/);
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    // name.match(nameFormat)
     // console.log(typeof name);
     // err.style.display = 'block';
     // err.style.height = '4rem';
     // console.log(name);
     // console.log(email);
     // console.log(message);
+
+    
+
     if( name.length < 5 ) {
        text = "Please enter a valid name";
        err.textContent = text ;
        err.style.height = '4rem';
        return false;
+    }
+    else if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+      text = 'Write full name';
+      err.textContent = text;
+      err.style.height = '4rem';
+      return false;
     }
     else if(email.match(mailformat) === null) {
         text = "Please enter a valid email";
