@@ -219,7 +219,7 @@ a {
     width: 85%;
     margin: auto;
     display: flex;
-    padding: 3rem 4rem;
+    padding: 3rem 2rem;
     /* justify-content: center; */
 }
 .contact-text {
@@ -362,7 +362,7 @@ a {
    }
    .contact-form-container {
       flex-direction: column;
-      padding:1rem 2rem;
+      padding:1rem .5rem;
    }
    .contact-text {
       width: 100%;
@@ -382,6 +382,7 @@ a {
    .details-text {
       padding: 0;
       text-align: center;
+      line-height: 1;
    }
    .about-text {
         font-size: 1.8rem;
